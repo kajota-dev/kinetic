@@ -42,7 +42,7 @@ export default function KineticLanding() {
       
       {/* 1. BARRA DE URGENCIA RADICAL (Hormozi: Scarcity) */}
       <div className="bg-[#00E5FF] text-black text-[10px] md:text-xs font-black py-3 px-4 text-center sticky top-0 z-50 uppercase tracking-[0.2em]">
-        AVISO: Pocas plazas disponibles esta semana.
+        AVISO: Pocas plazas disponibles en esta fase.
       </div>
 
       {/* HEADER */}
@@ -76,7 +76,7 @@ export default function KineticLanding() {
         onClick={() => abrirModal('Hero Action')} 
         className="bg-[#00E5FF] text-black text-2xl font-black py-7 px-20 rounded-sm shadow-[0_0_60px_rgba(0,229,255,0.4)] hover:scale-105 transition-all uppercase italic tracking-tighter"
       >
-        INICIAR MI transformación — $199
+        INICIAR MI transformación — 199 USD
       </button>
       
       {/* EL CONTADOR DE CUPOS */}
@@ -86,7 +86,7 @@ export default function KineticLanding() {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
         </span>
         <p className="text-[#00E5FF] text-xs md:text-sm font-black uppercase tracking-[0.2em] italic">
-          Solo quedan <span className="text-white">3 cupos</span> disponibles para esta semana
+          Solo quedan <span className="text-white">3 cupos</span> disponibles para esta fase.
         </p>
       </div>
     </div>
@@ -186,7 +186,7 @@ export default function KineticLanding() {
                 No somos una app de suscripción masiva. Somos un servicio de alta precisión.
             </p>
             <p className="text-sm font-bold uppercase tracking-widest leading-relaxed">
-                Aceptamos solo a 10 personas por semana porque cada protocolo es verificado manualmente. Si no estás dispuesto a seguir el plan al 100%, deja el cupo para alguien que sí lo esté. Buscamos casos de éxito, no usuarios pasivos.
+                Aceptamos solo a 10 personas por fase porque cada protocolo es verificado manualmente. Si no estás dispuesto a seguir el plan al 100%, deja el cupo para alguien que sí lo esté. Buscamos casos de éxito, no usuarios pasivos.
             </p>
           </div>
           <button onClick={() => abrirModal('Commitment Section')} className="mt-16 bg-black text-[#00E5FF] text-2xl font-black py-8 px-16 rounded-sm shadow-2xl hover:scale-110 transition-all uppercase italic">
@@ -211,13 +211,13 @@ export default function KineticLanding() {
               <div className="text-center py-20">
                 <span className="material-symbols-outlined text-7xl text-[#00E5FF] mb-8 animate-pulse">check_circle</span>
                 <h3 className="text-3xl font-black text-white uppercase italic mb-6">Aplicación Recibida</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-10 italic">Estamos analizando tu perfil. Si cumples con los requisitos para uno de los 10 cupos, te contactaremos por WhatsApp en las próximas 24 horas para finalizar tu ingreso al sistema.</p>
+                <p className="text-zinc-400 text-sm leading-relaxed mb-10 italic">Estamos analizando tu perfil. Si cumples con los requisitos para uno de los 10 cupos, te contactaremos por WhatsApp en las próximas 24 horas para finalizar tu ingreso al sistema. Validaremos el pago y empezaremos a trabajar en su transformación</p>
                 <button onClick={cerrarModal} className="bg-[#00E5FF] text-black px-10 py-4 font-black uppercase text-xs tracking-[0.2em] italic">Entendido</button>
               </div>
             ) : (
               <>
                 <h3 className="text-3xl font-black text-white mb-2 text-center uppercase italic tracking-tighter">Cuestionario de Cualificación</h3>
-                <p className="text-zinc-500 text-[10px] text-center mb-10 uppercase font-black tracking-widest italic">Paso obligatorio para acceder a los 10 cupos semanales</p>
+                <p className="text-zinc-500 text-[10px] text-center mb-10 uppercase font-black tracking-widest italic">Paso obligatorio para acceder a los 10 cupos por fase</p>
                 
                 <form onSubmit={handleFormSubmit} className="space-y-5">
                   <div className="grid grid-cols-2 gap-4">
